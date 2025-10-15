@@ -10,9 +10,9 @@ public:
     virtual void switch_light() = 0;
     virtual ~Light() {}
 };
-
+// Пешеходный светофор - 1 бит 
 class pi_Light : public Light {
-    bool isGreenState;
+	unsigned int state : 1; // 0 - красный, 1 - зеленый
 public:
     pi_Light();
     void switch_light() override;
@@ -22,7 +22,7 @@ public:
 };
 
 class car_Light : public Light {
-    int state;
+	unsigned int state : 2; // 0 - зеленый, 1 - желтый, 2 - красный
 public:
     car_Light();
     void switch_light() override;
