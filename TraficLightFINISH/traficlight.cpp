@@ -2,14 +2,14 @@
 #include <iostream>
 
 // pi_Light
-pi_Light::pi_Light() : isGreenState(true) {}
+pi_Light::pi_Light() : state(1) {}
 
 void pi_Light::switch_light() {
-    isGreenState = !isGreenState;
+    state = !state;
 }
 
 bool pi_Light::isGreen() {
-    return isGreenState;
+    return state;
 }
 
 bool pi_Light::isYellow() {
@@ -17,7 +17,7 @@ bool pi_Light::isYellow() {
 }
 
 bool pi_Light::isRed() {
-    return !isGreenState;
+    return !state;
 }
 
 // car_Light

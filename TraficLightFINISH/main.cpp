@@ -18,8 +18,13 @@ int main() {
     return 0;
 }
 
-// cd C:\Users\Илья\Desktop\CMakeSave
-// msbuild TrafficLight.sln
-// cd Debug
-// main.exe
-//
+//cd C:\Users\Илья\source\repos\TraficLight\TraficLightFINISH
+// 
+//rmdir /s /q build
+
+//mkdir build
+//cd build
+
+//cmake ..
+
+//cmake --build . --config Debug
