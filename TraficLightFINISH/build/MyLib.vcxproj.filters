@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Илья\source\repos\TraficLight\TraficLightFINISH\traficlight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Илья\source\repos\TraficLight\TraficLightFINISH\traficlight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Илья\source\repos\TraficLight\TraficLightFINISH\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{67F1D62B-EDC2-3964-BCBF-4AF144D4A85F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D4E0EB2E-90F1-32F9-ACCD-C75BAFFCE183}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

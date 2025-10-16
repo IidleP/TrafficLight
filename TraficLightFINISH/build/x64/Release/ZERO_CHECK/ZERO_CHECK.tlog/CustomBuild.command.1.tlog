@@ -1,0 +1,10 @@
+^C:\USERS\ИЛЬЯ\SOURCE\REPOS\TRAFICLIGHT\TRAFICLIGHTFINISH\BUILD\CMAKEFILES\97AB2A3A08183E7CD231C469C9AA1574\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Илья/source/repos/TraficLight/TraficLightFINISH -BC:/Users/Илья/source/repos/TraficLight/TraficLightFINISH/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Илья/source/repos/TraficLight/TraficLightFINISH/build/TrafficLight.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
