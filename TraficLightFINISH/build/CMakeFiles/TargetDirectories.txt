@@ -1,4 +1,0 @@
-C:/Users/Илья/source/repos/TraficLight/TraficLightFINISH/build/CMakeFiles/MyLib.dir
-C:/Users/Илья/source/repos/TraficLight/TraficLightFINISH/build/CMakeFiles/main.dir
-C:/Users/Илья/source/repos/TraficLight/TraficLightFINISH/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Илья/source/repos/TraficLight/TraficLightFINISH/build/CMakeFiles/ZERO_CHECK.dir
