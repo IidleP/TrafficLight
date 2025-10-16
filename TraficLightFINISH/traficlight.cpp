@@ -5,7 +5,7 @@
 pi_Light::pi_Light() : state(1) {}
 
 void pi_Light::switch_light() {
-    state = !state;
+    state = ~state;
 }
 
 bool pi_Light::isGreen() {
@@ -21,10 +21,18 @@ bool pi_Light::isRed() {
 }
 
 // car_Light
-car_Light::car_Light() : state(0) {}
+car_Light::car_Light() : state(2) {}
 
 void car_Light::switch_light() {
-    state = (state + 1) % 3;
+    if (state == 2) {       
+        state = 0;           
+    }
+    else if (state == 0) { 
+        state = 1;           
+    }
+    else {                 
+        state = 2;           
+    }
 }
 
 bool car_Light::isGreen() {
@@ -54,15 +62,15 @@ Road::Road() {
 }
 
 void Road::switch_light() {
+    bool wasRed = cl.isRed();
+    bool wasYellow = cl.isYellow();
     cl.switch_light();
-
-    if (cl.isRed()) {
-
+    if (wasYellow && cl.isRed()) {
         if (!pl.isGreen()) {
             pl.switch_light();
         }
     }
-    else {
+    else if (wasRed && cl.isGreen()) {
         if (pl.isGreen()) {
             pl.switch_light();
         }

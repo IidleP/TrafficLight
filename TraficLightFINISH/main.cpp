@@ -1,6 +1,7 @@
 #include <iostream>
 #include "traficlight.h"
 using namespace std;
+//cmake --build . --config Release
 
 int main() {
     Road road;
@@ -17,14 +18,3 @@ int main() {
 
     return 0;
 }
-
-//cd C:\Users\Илья\source\repos\TraficLight\TraficLightFINISH
-// 
-//rmdir /s /q build
-
-//mkdir build
-//cd build
-
-//cmake ..
-
-//cmake --build . --config Debug
